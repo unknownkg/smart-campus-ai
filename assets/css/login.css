@@ -1,0 +1,43 @@
+/* The Monolith: компактная форма учебного входа без имитации биометрической защиты. */
+.sc-login-page{min-height:100vh;display:flex;flex-direction:column;position:relative;isolation:isolate}
+.sc-login-page::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 33%,var(--sc-garnet-glow),transparent 55%),linear-gradient(90deg,transparent calc(50% - 1px),rgba(155,148,153,.025) 50%,transparent calc(50% + 1px))}
+.sc-login-header,.sc-login-footer{width:min(1080px,calc(100% - 48px));margin-inline:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.sc-login-header{padding:26px 0}.sc-login-header .sc-icon-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--sc-ink-2)}
+.sc-login-main{flex:1;display:grid;place-items:center;padding:22px 24px 44px}
+.sc-monolith{width:min(920px,100%);display:grid;grid-template-columns:minmax(0,.89fr) minmax(0,1.11fr);overflow:hidden;border:1px solid var(--sc-line-strong);border-radius:20px;background:var(--sc-panel);box-shadow:var(--sc-shadow);position:relative}
+.sc-monolith::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,var(--sc-garnet-active),var(--sc-garnet) 66%,#3a242e)}
+.sc-monolith-info{padding:48px 33px 32px 40px;border-right:1px solid var(--sc-line);display:flex;flex-direction:column;min-height:485px;background:linear-gradient(150deg,var(--sc-garnet-glow),transparent 68%)}
+.sc-monolith-info .sc-overline{margin-bottom:16px}
+.sc-monolith-info h1{font-size:clamp(29px,3.2vw,43px);letter-spacing:-.055em;line-height:1.12;margin:0 0 18px;font-weight:750;max-width:350px}
+.sc-monolith-info p{margin:0;color:var(--sc-ink-2);font-size:13px;line-height:1.75;max-width:308px}
+.sc-monolith-seal{width:70px;height:70px;border:1px solid var(--sc-line-strong);border-radius:18px;display:grid;place-items:center;background:var(--sc-card);color:var(--sc-garnet-active);margin:0 0 27px}
+.sc-monolith-seal svg{width:32px;height:32px}
+.sc-module-list{display:grid;gap:13px;margin-top:auto;padding-top:34px}
+.sc-module-item{display:flex;align-items:center;gap:11px;font-size:12px;color:var(--sc-ink-2)}
+.sc-module-item .sc-icon{color:var(--sc-jade)}
+.sc-monolith-form{padding:40px 40px 28px;display:flex;flex-direction:column;gap:21px}
+.sc-monolith-form-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:3px}
+.sc-monolith-form h2{font-size:25px;font-weight:750;letter-spacing:-.04em;margin:7px 0 5px}
+.sc-monolith-form-heading p{margin:0;color:var(--sc-ink-2);font-size:12px}
+.sc-login-fields{display:grid;gap:17px}
+.sc-login-actions{display:grid;gap:11px}
+.sc-login-help{display:flex;gap:8px;align-items:flex-start;font-size:11px;color:var(--sc-ink-3);border-top:1px solid var(--sc-line);padding-top:18px;line-height:1.55}
+.sc-login-help .sc-icon{color:var(--sc-jade)}
+.sc-login-msg{min-height:19px;font-size:12px;color:var(--sc-danger);margin:-7px 0 0}
+.sc-login-footer{padding:18px 0 28px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--sc-ink-3)}
+@media(max-width:820px){.sc-monolith{max-width:530px;grid-template-columns:1fr}.sc-monolith-info{min-height:0;padding:25px 30px 22px;border-right:0;border-bottom:1px solid var(--sc-line)}.sc-monolith-seal,.sc-module-list{display:none}.sc-monolith-info h1{font-size:24px;margin:0 0 7px}.sc-monolith-info p{font-size:12px}.sc-monolith-form{padding:27px 30px 26px}}
+@media(max-width:520px){.sc-login-header,.sc-login-footer{width:calc(100% - 32px)}.sc-login-header{padding:19px 0}.sc-login-header .sc-icon-link{font-size:0}.sc-login-header .sc-icon-link .sc-icon{width:20px;height:20px}.sc-login-main{padding:8px 14px 24px}.sc-monolith-info{padding:22px}.sc-monolith-form{padding:23px 21px}.sc-login-footer{font-size:9px;gap:8px}}
+
+/* Форма входа занимает основное место; декоративные элементы не отвлекают от ввода данных. */
+.sc-monolith { grid-template-columns: minmax(0,.79fr) minmax(0,1.21fr); }
+.sc-monolith-info { min-height: 470px; padding-block: 39px 28px; }
+.sc-monolith-info h1 { font-size: clamp(27px,2.9vw,38px); max-width: 335px; }
+.sc-monolith-seal { width: 57px; height: 57px; border-radius: 13px; color: var(--sc-garnet-ink); }
+.sc-monolith-seal svg { width: 27px; height: 27px; }
+.sc-monolith-form { gap: 16px; }
+.sc-module-list { gap: 10px; }
+.sc-role-description { border-left: 2px solid var(--sc-jade); padding-left: 10px; margin: -4px 0 0; font-size: 11px; color: var(--sc-ink-2); }
+.sc-login-header .sc-icon-button { width: 40px; height: 40px; }
+.sc-login-header-actions { display: flex; align-items: center; gap: 11px; }
+@media(max-width:820px) { .sc-monolith { grid-template-columns: 1fr; } .sc-monolith-info { min-height: 0; padding: 23px 30px; } }
+@media(max-width:520px) { .sc-monolith-info { padding: 19px 21px; } .sc-monolith-form { padding: 21px; } }

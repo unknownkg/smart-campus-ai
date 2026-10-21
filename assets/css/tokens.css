@@ -1,0 +1,72 @@
+/* Smart Campus AI · Garnet Ash × Mineral Steel v2
+   Фирменный гранатовый цвет не обозначает критическое состояние.
+   Префикс классов sc- предотвращает конфликты с другими компонентами.
+   Стили не требуют глобального сброса Bootstrap. */
+:root, [data-theme="dark"] {
+  color-scheme: dark;
+  --sc-canvas: #111214;
+  --sc-sidebar: #16171A;
+  --sc-panel: #1A1C20;
+  --sc-card: #202225;
+  --sc-elevated: #292C31;
+  --sc-hover: #33363B;
+  --sc-line: #34383E;
+  --sc-line-strong: #50515A;
+  --sc-ink: #EEF0F2;
+  --sc-ink-2: #B2BAC4;
+  --sc-ink-3: #9CA5B0;
+  --sc-garnet: #7B2D3A;
+  --sc-garnet-active: #B36578;
+  --sc-garnet-hover: #963E50;
+  --sc-garnet-ink: #E2AAB9;
+  --sc-garnet-wash: rgba(153, 66, 87, .14);
+  --sc-garnet-glow: rgba(123, 45, 58, .16);
+  --sc-jade: #82B09F;
+  --sc-jade-bright: #A1D1BF;
+  --sc-jade-ink: #11251F;
+  --sc-jade-wash: rgba(130, 176, 159, .12);
+  --sc-jade-border: rgba(130, 176, 159, .34);
+  --sc-warning: #EDC17D;
+  --sc-warning-wash: rgba(237, 193, 125, .12);
+  --sc-danger: #EE8A93;
+  --sc-danger-wash: rgba(238, 138, 147, .12);
+  --sc-info: #A0ACD2;
+  --sc-info-wash: rgba(160, 172, 210, .10);
+  --sc-radius-s: 8px;
+  --sc-radius-m: 12px;
+  --sc-radius-l: 18px;
+  --sc-shadow: 0 22px 64px rgba(0,0,0,.24);
+  --sc-font: Inter, "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+}
+[data-theme="light"] {
+  color-scheme: light;
+  --sc-canvas: #F0F0F0;
+  --sc-sidebar: #F6F5F5;
+  --sc-panel: #FFFFFF;
+  --sc-card: #FAF9F9;
+  --sc-elevated: #F0EDEE;
+  --sc-hover: #E9E6E8;
+  --sc-line: #DAD7DB;
+  --sc-line-strong: #B9B4BA;
+  --sc-ink: #28262B;
+  --sc-ink-2: #535A64;
+  --sc-ink-3: #626B76;
+  --sc-garnet: #762C3B;
+  --sc-garnet-active: #762C3B;
+  --sc-garnet-hover: #8D384D;
+  --sc-garnet-ink: #792F43;
+  --sc-garnet-wash: rgba(144, 48, 74, .09);
+  --sc-garnet-glow: rgba(144, 48, 74, .06);
+  --sc-jade: #366E60;
+  --sc-jade-bright: #286353;
+  --sc-jade-ink: #FFFFFF;
+  --sc-jade-wash: rgba(54, 110, 96, .09);
+  --sc-jade-border: rgba(54, 110, 96, .32);
+  --sc-warning: #925D16;
+  --sc-warning-wash: rgba(146, 93, 22, .09);
+  --sc-danger: #A52E40;
+  --sc-danger-wash: rgba(165, 46, 64, .09);
+  --sc-info: #3F598C;
+  --sc-info-wash: rgba(63, 89, 140, .08);
+  --sc-shadow: 0 20px 52px rgba(35, 26, 34, .10);
+}

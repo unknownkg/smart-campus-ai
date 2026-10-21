@@ -1,0 +1,92 @@
+/* Общие стили интеграции компонентов The Monolith и The Registry в приложение. */
+.jade-text { color:var(--sc-jade-bright) }
+.sc-search-kind { display:block; font-size:11px; margin-top:3px }
+.sc-page-heading h1 { overflow-wrap:anywhere }
+.sc-app { min-height:100dvh }
+.sc-sidebar { position:sticky; top:0; height:100dvh; overflow-y:auto }
+.sc-content>* { min-width:0 }
+.sc-profile { display:grid; font-size:11px; max-width:160px; overflow-wrap:anywhere }
+.sc-profile strong { font-size:12px }
+.sc-page-heading p { max-width:780px }
+.sc-kpi { transition:border-color .15s }
+a.sc-kpi:hover { border-color:var(--sc-jade) }
+.sc-kpi-value small { font-size:13px; font-weight:500; color:var(--sc-ink-3) }
+.sc-kpi-detail { line-height:1.6 }
+.sc-notice { border-left:3px solid var(--sc-warning); padding:12px 16px; background:var(--sc-warning-wash); border-radius:8px; font-size:12px }
+.sc-storage-warning:empty { display:none }
+.sc-content-footer { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:11px; color:var(--sc-ink-3); border-top:1px solid var(--sc-line); padding-top:20px }
+.sc-filters { display:grid; grid-template-columns:minmax(180px,1fr) 160px 180px auto; gap:12px; padding:16px; align-items:end }
+.sc-filters .sc-btn { height:44px }
+.sc-table td { vertical-align:middle }
+.sc-table a:not(.sc-pill) { text-decoration:underline; text-underline-offset:3px }
+.sc-table .sc-sub { display:block; color:var(--sc-ink-3); font-size:10px; margin-top:3px }
+.sc-table--rooms { min-width:950px }
+.sc-table-wrap { max-width:100%; overscroll-behavior-x:contain }
+.sc-section-content { padding:20px; display:grid; gap:16px }
+.sc-section-content p { margin:0; color:var(--sc-ink-2) }
+.sc-section-content h2 { margin:0; font-size:17px }
+.sc-chart { position:relative; height:245px; min-width:0 }
+.sc-charts-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:15px }
+.sc-chart-card { min-width:0 }
+.sc-chart-description { font-size:11px; color:var(--sc-ink-3); margin:0; padding:0 19px 16px }
+.sc-detail-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px }
+.sc-detail-grid>div { background:var(--sc-card); border:1px solid var(--sc-line); border-radius:8px; padding:16px; min-width:0 }
+.sc-detail-grid dt { color:var(--sc-ink-3); font-size:12px }
+.sc-detail-grid dd { margin:8px 0 0; font-size:19px; font-weight:650; overflow-wrap:anywhere }
+.sc-detail-grid dd small { display:block; margin-top:4px; font-size:10px; font-weight:400; color:var(--sc-ink-3) }
+.sc-form { display:grid; gap:16px; max-width:600px }
+.sc-form-actions { display:flex; flex-wrap:wrap; gap:10px; align-items:center }
+.sc-list { display:grid }
+.sc-list-item { display:flex; gap:16px; justify-content:space-between; align-items:center; padding:17px 19px; border-bottom:1px solid var(--sc-line) }
+.sc-list-item:last-child { border-bottom:0 }
+.sc-list-item h2,.sc-list-item h3 { margin:0 0 5px; font-size:13px }
+.sc-list-item p { margin:4px 0; font-size:12px; color:var(--sc-ink-2); overflow-wrap:anywhere }
+.sc-list-item .sc-meta { color:var(--sc-ink-3); font-size:11px }
+.sc-read { opacity:.75 }
+.sc-login-account { padding:11px; background:var(--sc-card); border:1px solid var(--sc-line); border-radius:8px; overflow-wrap:anywhere; color:var(--sc-ink-2); font-size:11px }
+.sc-monolith-form { gap:15px }
+.sc-login-footer { text-transform:none; letter-spacing:0; line-height:1.6; align-items:flex-start }
+.sc-topbar-heading { min-width:0 }
+.sc-breadcrumb { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:240px }
+.sc-menu-close { display:none; margin-left:auto }
+dialog.sc-modal { width:min(570px,calc(100% - 28px)); padding:22px; border:1px solid var(--sc-line-strong); border-radius:18px; background:var(--sc-panel); color:var(--sc-ink); max-height:85dvh; overflow:auto; box-shadow:var(--sc-shadow) }
+dialog::backdrop { background:rgba(0,0,0,.65) }
+.sc-modal-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:16px }
+.sc-modal h2 { margin:0; font-size:19px }
+.sc-modal p { color:var(--sc-ink-2); font-size:13px }
+.sc-modal .sc-dialog-results { margin-top:15px; max-height:50dvh }
+.sc-results-count { margin:0; padding:12px 17px; font-size:12px; color:var(--sc-ink-2); border-block:1px solid var(--sc-line) }
+.sc-toast { position:fixed; bottom:20px; right:20px; z-index:80; max-width:min(440px,calc(100% - 40px)); display:flex; align-items:center; gap:12px; padding:14px 18px; border:1px solid var(--sc-jade); border-radius:12px; background:var(--sc-panel); box-shadow:var(--sc-shadow); font-size:13px }
+.sc-chart-select { width:140px; height:34px; font-size:12px }
+textarea.sc-input { height:auto; padding-top:10px }
+.sc-form-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px }
+.sc-simulation-bar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:14px clamp(18px,2.3vw,34px); background:var(--sc-panel); border-bottom:1px solid var(--sc-line) }
+.sc-simulation-meta { display:grid; gap:3px; font-size:12px }
+.sc-simulation-meta span,.sc-simulation-meta small { color:var(--sc-ink-3); font-size:11px }
+.sc-refresh-note { flex-basis:100%; margin:0; font-size:11px; color:var(--sc-warning) }
+.sc-analysis-results { display:grid; gap:16px; min-width:0 }
+.sc-analysis-filters { grid-template-columns:repeat(3,minmax(0,1fr)) }
+.sc-diagnostics summary { padding:17px 19px; cursor:pointer; font-weight:650 }
+.sc-diagnostics .sc-table { min-width:1100px }
+#anomaly-results .sc-table { min-width:1050px }
+@media (max-width:1200px) { .sc-filters { grid-template-columns:1fr 1fr }.sc-profile { display:none } }
+@media (max-width:850px) { .sc-charts-grid { grid-template-columns:1fr }.sc-detail-grid { grid-template-columns:repeat(2,minmax(0,1fr)) } }
+@media (max-width:720px) {
+  .sc-sidebar { position:fixed; height:100dvh; visibility:hidden }
+  body.sc-menu-open .sc-sidebar { visibility:visible }
+  .sc-menu-close { display:grid }
+  .sc-topbar { gap:8px }
+  .sc-topbar-heading strong { font-size:12px }
+  .sc-breadcrumb { max-width:125px; font-size:10px }
+  .sc-avatar { display:none }
+  .sc-list-item { align-items:flex-start; flex-direction:column; gap:10px }
+  .sc-section-head { flex-wrap:wrap }
+  .sc-topbar-right { gap:4px }
+  .sc-section-content { padding:16px }
+}
+@media (max-width:450px) {
+  .sc-filters { grid-template-columns:1fr }.sc-detail-grid { grid-template-columns:1fr 1fr }
+  .sc-detail-grid>div { padding:12px }.sc-detail-grid dd { font-size:16px }
+  .sc-kpi-top { font-size:11px }.sc-kpi { gap:10px }.sc-kpi-value { font-size:25px }
+  .sc-kpi-top .sc-icon { width:16px; height:16px }
+}
